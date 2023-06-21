@@ -26,7 +26,6 @@ const usePlayer = (emitter: Emitter<Events>) => {
       mplayer.songsHistoric.push(mplayer.currentSong.id)
 
     if (!mplayer.settings.folderPath) mplayer.settings.folderPath = ''
-    console.log(mplayer.settings.volume)
     Howler._howls[0] = new Howl({
       src: [mplayer.settings.folderPath + mplayer.currentSong.path || ''],
       rate: 1,
@@ -159,6 +158,15 @@ const usePlayer = (emitter: Emitter<Events>) => {
     Howler.volume(mplayer.settings.volume)
   }
 
+  const muteVolume = () => {
+    if(mplayer.settings.volume != 0) {
+        mplayer.settings.volume = 0
+    } else {
+      mplayer.settings.volume = 1
+    }
+    updateVolume()
+  }
+
   const switchNightcore = () => {
     if (!mplayer.isNightcore) {
       mplayer.isNightcore = true
@@ -262,6 +270,7 @@ const usePlayer = (emitter: Emitter<Events>) => {
     pause,
     next,
     updateVolume,
+    muteVolume,
     updateRate,
     switchNightcore,
     switchLowcore,
