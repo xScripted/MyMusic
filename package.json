@@ -1,0 +1,13 @@
+{
+  "name": "MyMusic",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Miquel Toran",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "mymusic-app",
+    "mymusic-desktop",
+    "mymusic-services"
+  ]
+}

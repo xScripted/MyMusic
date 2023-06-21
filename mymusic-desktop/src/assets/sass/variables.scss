@@ -1,0 +1,16 @@
+$colorDarkViolet: #1e0040;
+$colorLightViolet: #cda7ff;
+$colorDarkGrey: #121212;
+$colorLightGrey: #e0e0e0;
+$colorPink: #cf00be;
+$colorBlue: #090979;
+
+$gradient: linear-gradient(
+  214deg,
+  $colorDarkViolet 0%,
+  $colorBlue 20%,
+  $colorPink 100%
+);
+
+$playerHeight: 100px;
+$headerHeight: 50px;

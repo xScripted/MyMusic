@@ -1,0 +1,22 @@
+{
+  "name": "mymusic-services",
+  "version": "1.0.0",
+  "main": "./src/index.ts",
+  "author": "Miquel Toran",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/howler": "^2.2.7",
+    "@types/jest": "^28.1.6",
+    "jest": "^28.1.3",
+    "prettier": "^2.7.1",
+    "ts-jest": "^28.0.7",
+    "typescript": "^4.6.4",
+    "vite": "^4.1.4",
+    "vue": "^3.2.21"
+  },
+  "dependencies": {
+    "howler": "^2.2.3",
+    "mitt": "^3.0.0",
+    "pinia": "^2.0.28"
+  }
+}

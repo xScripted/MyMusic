@@ -1,0 +1,7 @@
+{
+  "name": "MyMusic",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}
