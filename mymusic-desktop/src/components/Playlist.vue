@@ -44,7 +44,12 @@ watchEffect(() => {
   width: 100%;
   overflow-y: scroll;
   &::-webkit-scrollbar {
-    display: none;
+    width: 10px;
+    background-color: $colorDarkGrey;
+  }
+  &::-webkit-scrollbar-thumb {
+  background-color: $colorLightGrey;
+  border-radius: 5px;
   }
 
   .song {
