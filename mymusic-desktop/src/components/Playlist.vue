@@ -48,8 +48,8 @@ watchEffect(() => {
     background-color: $colorDarkGrey;
   }
   &::-webkit-scrollbar-thumb {
-  background-color: $colorLightGrey;
-  border-radius: 5px;
+    background-color: $colorLightGrey;
+    border-radius: 5px;
   }
 
   .song {

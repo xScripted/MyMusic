@@ -223,9 +223,15 @@ const expanded = ref(false)
     filter: invert(1);
     background: none;
 
-    &.play-pause {
+    &.play{
       width: 50px;
       height: 50px;
+    }
+
+    &.pause{
+      width: 40px;
+      height: 40px;
+      padding: 15px;
     }
   }
 
@@ -357,13 +363,13 @@ const expanded = ref(false)
       />
       <img
         v-if="store.playing"
-        class="icon play-pause"
+        class="icon pause"
         src="@/assets/icons/pause.svg"
         @click="pause()"
       />
       <img
         v-else
-        class="icon play-pause"
+        class="icon play"
         src="@/assets/icons/play-circle.svg"
         @click="play()"
       />
